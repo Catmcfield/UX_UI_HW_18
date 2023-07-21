@@ -370,5 +370,8 @@ ul .inline-block:active{
     body {
         flex-direction: column;
     }
+    .flexContainer {
+        width:100%
+    }
   }
   
