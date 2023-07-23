@@ -7,6 +7,7 @@ body {
   letter-spacing: -.003em;
   font-size: 20px;
   padding: 70px;
+  
 }
 h1 {
     font-family: "Quicksand", Sans-serif; font-size: 60px;
@@ -59,27 +60,40 @@ p {
 
 .logo {
     display: flex;
+    min-width: 50%;
 
 }
 
-nav ul {
+ul {
     display:flex;
     gap: 20px; 
     font-family: "Quicksand", Sans-serif;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
     color: #2E333D;
+    border-radius: 12px;
+    padding: 10px;
+    width: 50%;
     
+
 
 }
 nav li {
     list-style: none;
+    border-radius: 12px;
+    width: 325px;
+    text-align: center;
+    
 }
+
+
 
 .content img{
     width:25%;
     padding:25px;
     float: right;
-    display: inline;
+    display: flex;
+    
     
 }
 .content {
@@ -87,13 +101,12 @@ nav li {
     margin: 300px auto;
     display: inline;
     flex-wrap: wrap;
-    
-    
+      
 }
 .footer img {
     width: 5%;
     padding: 1%;
-    display: inline-block;
+    display: flex;
     vertical-align: bottom;
     align-items: flex-start;
     vertical-align: text-bottom;
@@ -108,10 +121,11 @@ font-family: "Quicksand", Sans-serif;}
 .footer.footer
 {
     padding: 30px;
-    display: inline-flex;
+    display: flex;
     vertical-align: bottom;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 50px;
+    margin: auto;
 
     
 }
@@ -221,19 +235,29 @@ section button:active {
 
    }
  .Creaven {
-    width: fit-content;
+    display: inline-flex;
+    gap: 50px;
     margin: auto;
-    display: inline-block;
+}
+ .Creaven text{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     text-align: left;
+    padding-left: 0px;
     
  }
 
  .Creaven img
  {
+    display: flex;
+    flex-direction: row-reverse;
     padding-bottom: 50px;
-    width: 70%;
     float: right;
+    width: 50%;
+    height: 50%; 
     
  }
  .Creaven button {
@@ -243,14 +267,20 @@ section button:active {
 .Unicef {
     display: flex;
     gap: 50px;
+    margin: auto;
 }
 
 .Unicef-complete {
-    width: 50%;
-    height: auto;
+        min-width: 30%;
+        max-width: 50%;
+        height: 50%; 
+          
+        
+      
 }
 .Unicef-text {
     width: 50%;
+
 
 }
 .Unicef-logo {
@@ -266,58 +296,135 @@ section button:active {
     padding-top: 20px;
     text-align: center;
     margin: auto;
+    display: flex;
     }
+    
 .DOL {
     width: fit-content;
     margin: auto;
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    
 }
+
 .Tools {
     width: fit-content;
     margin: auto;
     flex-wrap: nowrap;
     text-align: center;
     justify-content: center; 
+   
 }
+
 .Tools-icons img {
     width:50%;
-    padding-right: 50px;
     padding-bottom: 50px;
-    padding-left: 275px;
     padding-top: 20px;
     text-align: center;
     margin: auto;
-    
-
 }
-ul .inline-block:hover{
+.Tools div {
+    text-align: center;
+}
+
+nav li:hover{
     text-decoration: underline;
 }
 
-ul .inline-block:active{
+nav li:active {
     text-decoration: underline;
     background-color: #ECFFF5;
-}
+} 
 
 @media only screen and (max-width: 600px) {
     body {
         flex-direction: column;
+        flex-wrap: nowrap;
+        display: flex;
     }
+    .content {
+        display: flex;
+    }
+    .c
+
+
+  
     .Unicef {
         flex-direction: column;
-    }
-    
+        display:flex;
+        
+    } 
     .Unicef-complete {
-        width: 100%;
-    }
+        
+        justify-content: center;  
+    }       
+
     .Unicef-text {
+        display: flex;
+    
+ 
+        
+    }
+    .Creaven {
+        flex-direction: column;
+        display:flex;
+        flex-wrap: nowrap;
+
+        gap: 100px;
         width: 100%;
+    } 
+    .Creaven-text {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        display: flex;    
+    }     
+    .creaven img {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;   
+        display: flex; 
+    }   
+    .DOL-logo {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+    .DOL  {
+        flex-direction: column;
+        display: flex;
+        width: 50%;
+        
+    }
+   
+    
+    
+   
+
+    h1 {
+        font-family: "Quicksand", Sans-serif; font-size: 36px;
+        color: #2E333D;
+    }
+    h2 {
+    font-family: "Quicksand", Sans-serif;font-size: 24px;
+    font-weight: bold;
+    color: #2E333D;
     
     }
-  
-    
+    h3{
+    font-family: "Quicksand", Sans-serif;font-size: 24px;
+    font-weight: bold;
+    color: #2E333D;
+    }
+    h4 {font-family: "Quicksand", Sans-serif;font-size: 20px;
+    font-weight: bold;
+    color: #2E333D;
+    }
+    h5 {font-family: "Quicksand", Sans-serif;font-size: 20px;
+    font-weight: normal;
+    color: #2E333D; 
+
 }
   
+}
