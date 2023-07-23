@@ -242,11 +242,12 @@ section button:active {
  .Creaven text{
     
     width: 50%;
-    display: flex;
+    display: inline-block;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     text-align: left;
     padding-left: 0px;
+    
     
  }
 
@@ -297,16 +298,21 @@ section button:active {
     text-align: center;
     margin: auto;
     display: flex;
+    
     }
     
 .DOL {
     width: fit-content;
+    display: inline-block;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     text-align: center;
     justify-content: center;
     
+}
+.DOL button {
+    text-align: center;
+    justify-content: center;
 }
 
 .Tools {
@@ -339,30 +345,37 @@ nav li:active {
 } 
 
 @media only screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        display: flex;
+    }
     body {
         flex-direction: column;
-        flex-wrap: nowrap;
         display: flex;
     }
     .content {
         display: flex;
     }
-    .c
+
 
 
   
     .Unicef {
         flex-direction: column;
         display:flex;
+        width: 100%;
+        
         
     } 
     .Unicef-complete {
         
-        justify-content: center;  
+        justify-content: center; 
+        width: 100%; 
     }       
 
     .Unicef-text {
         display: flex;
+        width: 100%;
     
  
         
@@ -371,7 +384,6 @@ nav li:active {
         flex-direction: column;
         display:flex;
         flex-wrap: nowrap;
-
         gap: 100px;
         width: 100%;
     } 
@@ -383,7 +395,7 @@ nav li:active {
     .creaven img {
         flex-direction: column;
         flex-wrap: nowrap;
-        width: 100%;   
+        width: 100% !important;   
         display: flex; 
     }   
     .DOL-logo {
@@ -427,4 +439,4 @@ nav li:active {
 
 }
   
-}
+    }
